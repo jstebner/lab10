@@ -26,11 +26,19 @@ public class testSelectionSort {
     }
     // 3) testMixed – testing a list containing positive, negative and zeros.
     public void testMixed() {
-
+        int expected[] = {-9, -7, -5, -3, -1, 2, 4, 6, 8};
+        int nums[] = {4, -7, -5, -1, -9, -3, 6, 2, 8};
+        SelectionSort sorter = new SelectionSort();
+        nums = sorter.basicSelectionSort(nums);
+        assertArrayEquals(expected, nums);
     }
     // 4) testDuplicates  –  testing  a  list  containing  one  or  more  duplicate 
     //                       number, for both positive and negative numbers
     public void testDuplicates() {
-        
+        int expected[] = {-9, -8, -7, -6, -5, -4, -3, -2, -1, 1, 2, 3, 4};
+        int nums[] = {-4, -1, -6, 1, -7, -5, 3, -8, 2, -9, -3, 4, -2};
+        SelectionSort sorter = new SelectionSort();
+        nums = sorter.basicSelectionSort(nums);
+        assertArrayEquals(expected, nums);
     }
 }

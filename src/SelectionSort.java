@@ -3,7 +3,7 @@ public class SelectionSort {
     /** Creates a new instance of SelectionSort */
     public SelectionSort() {
     }
-       
+
     /* A simple SelectionSort algorithm
     * pre-condition: 
     * post-condition:
